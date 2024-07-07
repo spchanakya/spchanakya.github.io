@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-width: 2px !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.switch {
+  width: 160px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.switch[data-isOn="true"] {
+  justify-content: flex-end;
+}
+
+.handle {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 40px;
+}
+@keyframes reveal {
+  0% {
+    content: " ";
+  }
+  5% {
+    content: "P";
+  }
+  10% {
+    content: "Pr";
+  }
+  15% {
+    content: "Pra";
+  }
+  20% {
+    content: "Pran";
+  }
+  25% {
+    content: "Prana";
+  }
+  30% {
+    content: "Pranav";
+  }
+  35% {
+    content: "Pranava";
+  }
+  40% {
+    content: "Pranava ";
+  }
+  45% {
+    content: "Pranava C";
+  }
+  50% {
+    content: "Pranava Ch";
+  }
+  55% {
+    content: "Pranava Cha";
+  }
+  60% {
+    content: "Pranava Chan";
+  }
+  65% {
+    content: "Pranava Chana";
+  }
+  70% {
+    content: "Pranava Chanak";
+  }
+  75% {
+    content: "Pranava Chanaka";
+  }
+  80% {
+    content: "Pranava Chanakay";
+  }
+  85% {
+    content: "Pranava Chanakaya";
+  }
+}
+
+.name-animation {
+  animation: reveal 4s steps(16, end) forwards;
+  display: inline-block;
+}
+/* App.css */
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.vertical-timeline-element-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.vertical-timeline-element-subtitle {
+  font-size: 1.2em;
+  color: grey;
+}
