@@ -167,12 +167,21 @@ const Projects = () => {
       Plotly to enhance inventory management, and Initiated cloud data sourcing methods for real-time performance visualization.`,
       categories: ["ML"]
     },
+    {
+      imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_rtl.jpg",  // Make sure to update with the correct image URL
+      title: "Advanced Memory File System and Scheduling Enhancements for XV6 OS",
+      associatedWith: "University of Wisconsin Madison",
+      skills: "C++, Linux, OS",
+      description: `Engineered an advanced memory file system, custom shell, and an improved synchronous Interrupt Service Routine (ISR) for the XV6 OS, showcasing expertise in system-level C programming and operating system internals. 
+      Enhanced process scheduling and concurrency within XV6 by developing custom stack structures and implementing Multi-Level Feedback Queue (MLFQ) scheduling and mutexes.`,
+      categories: ["Embedded"]
+    },
 
     {
       url: "/",
       imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_capstone.jpg",
       title: "Anhanced MobilenetV2 for fruit and vegetable quality classification",
-      associatedWith: "University of Wisconsin - Madison",
+      associatedWith: "University of Wisconsin Madison",
       skills: "Python, Computer vision, Neural network, Tensorflow, ",
       description: "This is a short description of Project 2.",
       categories: ["ML"]
@@ -189,7 +198,7 @@ const Projects = () => {
     },
     {
       url: "",
-      imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_grafana.jpg",
+      imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_cwt.jpg",
       title: "Water monitoring and control using IoT for CWT",
       associatedWith: "Aakarsh Consultancy Enterprises",
       skills: "Embedded C, FreeRTOS, Arduino, IoT, ThinkSpeak, Comm Protocols(SPI,I2C)",
@@ -199,7 +208,7 @@ const Projects = () => {
     },
     {
       url: "",
-      imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_grafana.jpg",
+      imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_gsm.jpg",
       title: "Smart Energy Meter using GSM",
       associatedWith: "Aakarsh Consultancy Enterprises",
       skills: "Embedded C, Arduino, IoT, ThinkSpeak, Comm Protocols(SPI,I2C)",
@@ -209,7 +218,7 @@ const Projects = () => {
     },
     {
       url: "",
-      imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_grafana.jpg",
+      imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_mine.jpg",
       title: "Embedded Multi-Sensor Remote Mine Monitor",
       associatedWith: "Aakarsh Consultancy Enterprises",
       skills: "Embedded C, FreeRTOS, Arduino, LoraWan",
@@ -218,7 +227,7 @@ const Projects = () => {
       categories: ["Embedded"]
     },
     {
-      imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_fpga.jpg",  // Make sure to update with the correct image URL
+      imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_rtl.jpg", 
       title: "Maze Runner - RTL Design",
       associatedWith: "Personal Project",
       skills: "RTL Design, DAC, ADC, OpAmp, UART, FIFO, FPGA, Static Timing Analysis (STA), Clock Domain Crossing (CDC)",
