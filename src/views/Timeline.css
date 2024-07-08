@@ -1,4 +1,4 @@
-/* Timeline.css */
+Timeline.css
 .timeline-element-content {
     position: relative;
   }
@@ -20,4 +20,5 @@
   .timeline-element-content:hover .vertical-timeline-element-description {
     visibility: visible;
     opacity: 1;
-  }
+  } 
+
