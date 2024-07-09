@@ -141,11 +141,11 @@ const Home = () => {
                   steps={[
                     "ML Engineer",
                     1000,
-                    "AI solution Engineer",
-                    1000,
                     "Data Scientist",
                     1000,
-                    "Data Analyst",
+                    "Embedded Software Developer",
+                    1000,
+                    "Hardware Engineer",
                     1000,
                   ]}
                   loop={Infinity}
@@ -159,7 +159,7 @@ const Home = () => {
                   : "mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
               }
             >
-              I am a Machine Learning Engineer and Data Enthusiast.<br></br>Currently working as an ML Engineer - Intern at MeghaAI
+              I am a Machine Learning Engineer and Electronics Enthusiast.<br></br>Currently working as an ML Engineer - Intern at MeghaAI
             </p>
             <div className="flex md:justify-start ">
               {contactLinks.map((el) => (

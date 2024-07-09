@@ -34,7 +34,7 @@ const Card = ({ imgSrc, title, associatedWith, skills, description }) => {
               {title}
             </h5>
             <p className="mb-1 font-semibold text-gray-700 dark:text-gray-400">
-              Associated with: <span className="text-blue-500">{associatedWith}</span>
+              Associated: <span className="text-blue-500">{associatedWith}</span>
             </p>
             <p className="mb-3 font-semibold text-gray-700 dark:text-gray-400">
               Skills: <span className="text-blue-500">{skills}</span>
