@@ -59,7 +59,7 @@ const Home = () => {
                   : "mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
               }
             >
-              I am a Machine Learning Engineer and Electronics Enthusiast.<br></br>Currently working as an ML Engineer - Intern at MeghaAI
+              I am a Machine Learning Engineer and Electronics Enthusiast.<br></br>Currently working as an ML Engineer at MeghaAI
             </p>
             <div className="flex md:justify-start ">
               {contactLinks.map((el) => (

@@ -51,24 +51,24 @@ const Card = ({ imgSrc, title, associatedWith, skills, description }) => {
 
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50" onClick={handleCloseModal}>
-          <div className="bg-white rounded-lg p-8 max-w-md w-full relative" onClick={(e) => e.stopPropagation()}>
+          <div className="bg-white rounded-lg p-8 max-w-lg w-lg relative" onClick={(e) => e.stopPropagation()}>
             <button
               onClick={handleCloseModal}
               className="absolute top-2 right-2 text-gray-700 hover:text-gray-900"
             >
               &times;
             </button>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
               {title}
             </h5>
             {Array.isArray(description) ? (
-              <ul className="list-disc list-inside mb-3 text-gray-700 dark:text-gray-400">
+              <ul className="list-disc list-inside mb-3 text-gray-700 dark:text-gray-700">
                 {description.map((point, index) => (
                   <li key={index} className="text-justify" dangerouslySetInnerHTML={{ __html: point }}></li>
                 ))}
               </ul>
             ) : (
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-700 text-justify">
                 {description}
               </p>
             )}

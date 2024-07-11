@@ -31,10 +31,10 @@ const Projects = () => {
       associatedWith: "MeghaAI",
       skills: "KPI Analysis, Grafana, JavaScript, Apache Echarts, Data visualization",
       description: [
-        "Problem Statement: Tracking KPIs like pre-order levels, production timelines, and demand forecasting is challenging due to disparate data sources and formats in the manufacturing industry.",
-        "Approach: Grafana and Apache ECharts: Implemented Grafana for standard KPI plots and Apache ECharts for advanced visualizations, enabling real-time monitoring and in-depth analysis.",
+        "<span class='highlight'>Problem Statement</span>: Tracking KPIs like pre-order levels, production timelines, and demand forecasting is challenging due to disparate data sources and formats in the manufacturing industry.",
+        "<span class='highlight'>Approch</span>: Grafana and Apache ECharts: Implemented Grafana for standard KPI plots and Apache ECharts for advanced visualizations, enabling real-time monitoring and in-depth analysis.",
         "Unified Dashboard: Designed a dashboard to consolidate data from multiple plants, allowing simultaneous monitoring and comparison of critical metrics like energy consumption and production efficiency.",
-        "Impact: Data Accessibility and Decision-Making: Delivered a single-window solution that integrates all manufacturing data, providing comprehensive visibility and improving decision-making through actionable insights and advanced analytics."
+        "<span class='highlight'>Impact</span>: Data Accessibility and Decision-Making: Delivered a single-window solution that integrates all manufacturing data, providing comprehensive visibility and improving decision-making through actionable insights and advanced analytics."
       ],
       categories: ["ML"]
     },
@@ -45,11 +45,11 @@ const Projects = () => {
       associatedWith: "MeghaAI",
       skills: "Prophet, python, Sklearn, Pandas",
       description: [
-        "Problem Statement: The client's RO system required monitoring of pressure drops across filters, with frequent cleaning causing significant downtime.",
+        "<span class='highlight'>Problem Statement</span>: The client's RO system required monitoring of pressure drops across filters, with frequent cleaning causing significant downtime.",
         "Current cleaning was done every 3-4 hours, often before reaching the pressure drop threshold, leading to inefficiency.",
-        "Approach: Developed a time series forecasting system using Prophet to predict when the pressure drop threshold would be reached.",
+        "<span class='highlight'>Approch</span>: Developed a time series forecasting system using Prophet to predict when the pressure drop threshold would be reached.",
         "Employed feature engineering techniques and evaluated various models, with Prophet providing the best results.",
-        "Impact: Increased the filter cleaning cycle to 24 hours, reducing downtime and operational interruptions.",
+        "<span class='highlight'>Impact</span>: Increased the filter cleaning cycle to 24 hours, reducing downtime and operational interruptions.",
         "Achieved a 50% reduction in filter cleaning costs, leading to significant cost savings."
       ],
       categories: ["ML"]
@@ -61,10 +61,10 @@ const Projects = () => {
       associatedWith: "University of Wisconsin Madison",
       skills: "Python, Tensorflow, SkLearn, Matlab",
       description: [
-        "Problem Statement:Identifying new particles emitted during atomic collisions requires manual observation, which is impractical due to the rarity of these events.",
-        "Approach:Developed an automated method using AI models to classify particle images (16x16) into existing and new particles, logging parameters with MLflow. Performed PCA to identify that only 40% of the features significantly contributed to classification.",
+        "<span class='highlight'>Problem Statement</span>: Identifying new particles emitted during atomic collisions requires manual observation, which is impractical due to the rarity of these events.",
+        "<span class='highlight'>Approch</span>: Developed an automated method using AI models to classify particle images (16x16) into existing and new particles, logging parameters with MLflow. Performed PCA to identify that only 40% of the features significantly contributed to classification.",
         "Evaluated Naive Bayes, KNN, Decision Tree, and Random Forest classifiers, achieving 89% accuracy, and implemented a 4-layer CNN with TensorFlow, achieving 95% accuracy through hyperparameter tuning.",
-        "Impact:Automated detection reduced the need for constant manual observation by scientists, enhancing efficiency.",
+        "<span class='highlight'>Impact</span>: Automated detection reduced the need for constant manual observation by scientists, enhancing efficiency.",
         "Proposed model reduced expert intervention by 90%, significantly streamlining the identification process of new particles"
       ],
       categories: ["ML"]
@@ -75,11 +75,11 @@ const Projects = () => {
       associatedWith: "University of Wisconsin Madison",
       skills: "C++, Linux, OS",
       description: [
-        "Problem Statement:The XV6 operating system required improvements in its file system, shell, and interrupt handling to enhance overall system performance.",
+        "<span class='highlight'>Problem Statement</span>: The XV6 operating system required improvements in its file system, shell, and interrupt handling to enhance overall system performance.",
         "There was a need to optimize process scheduling and concurrency for better system efficiency.",
-        "Approach:Engineered an advanced memory file system, developed a custom shell, and improved the synchronous Interrupt Service Routine (ISR) for the XV6 OS.",
+        "<span class='highlight'>Approch</span>: Engineered an advanced memory file system, developed a custom shell, and improved the synchronous Interrupt Service Routine (ISR) for the XV6 OS.",
         "Enhanced process scheduling and concurrency by developing custom stack structures and implementing Multi-Level Feedback Queue (MLFQ) scheduling and mutexes.",
-        "Impact:Improved the performance and reliability of the XV6 operating system through advanced memory management and efficient interrupt handling.",
+        "<span class='highlight'>Impact</span>: Improved the performance and reliability of the XV6 operating system through advanced memory management and efficient interrupt handling.",
         "Enhanced process scheduling and concurrency, leading to more efficient CPU utilization and better system responsiveness."],
       categories: ["Embedded"]
     },
@@ -90,10 +90,10 @@ const Projects = () => {
       associatedWith: "University of Wisconsin Madison",
       skills: "Python, Computer vision, Neural network, Tensorflow",
       description: [
-        "Problem Statement: Ensuring the quality of food products throughout the supply chain is crucial, but traditional methods of assessing ripeness and quality are often inefficient and prone to error.",
-        "Approach: Developed a deep learning-based solution using image analysis to determine the ripeness and quality of fruits and vegetables, leveraging pre-trained models (MobileNetV2, VGG16) and a custom 4-layer CNN.",
+        "<span class='highlight'>Problem Statement</span>: Ensuring the quality of food products throughout the supply chain is crucial, but traditional methods of assessing ripeness and quality are often inefficient and prone to error.",
+        "<span class='highlight'>Approch</span>: Developed a deep learning-based solution using image analysis to determine the ripeness and quality of fruits and vegetables, leveraging pre-trained models (MobileNetV2, VGG16) and a custom 4-layer CNN.",
         "Employed data augmentation techniques and fine-tuned the models to enhance accuracy, enabling the system to classify food items into various ripeness stages.",
-        "Impact: Optimized the quality control process in food processing and distribution centers, reducing waste and ensuring high-quality end products.",
+        "<span class='highlight'>Impact</span>: Optimized the quality control process in food processing and distribution centers, reducing waste and ensuring high-quality end products.",
         "Empowered consumers, including visually impaired individuals, to assess the quality of food products accurately, enhancing decision-making and reducing food waste."
       ],
       categories: ["ML"]
@@ -116,10 +116,10 @@ const Projects = () => {
       associatedWith: "Aakarsh Consultancy Enterprises",
       skills: "Embedded C, FreeRTOS, Arduino, IoT, ThinkSpeak, Comm Protocols(SPI,I2C)",
       description: [
-        "Problem Statement: A manufacturing facility needed to ensure water reusability by maintaining specific pH, temperature, and turbidity standards, which required manual checks by multiple employees.",
-        "Approach: Developed an IIoT 4.0 solution with modules that continuously monitored pH, turbidity, and temperature, relaying data to a central processing unit using ESP8266.",
+        "<span class='highlight'>Problem Statement</span>: A manufacturing facility needed to ensure water reusability by maintaining specific pH, temperature, and turbidity standards, which required manual checks by multiple employees.",
+        "<span class='highlight'>Approch</span>: Developed an IIoT 4.0 solution with modules that continuously monitored pH, turbidity, and temperature, relaying data to a central processing unit using ESP8266.",
         "Built an IoT dashboard with Thinkspeak for remote monitoring and employed FreeRTOS for efficient scheduling, multitasking, and advanced interrupt handling.",
-        "Impact: Automated the monitoring process, reducing the need for 10-12 employees and enabling remote management.",
+        "<span class='highlight'>Impact</span>: Automated the monitoring process, reducing the need for 10-12 employees and enabling remote management.",
         "Improved operational efficiency and water quality management, ensuring optimal cooling tower performance."
       ],
       categories: ["Embedded"]
@@ -131,8 +131,8 @@ const Projects = () => {
       associatedWith: "Aakarsh Consultancy Enterprises",
       skills: "Embedded C, Arduino, IoT, ThinkSpeak, GSM protocol, Data Analysis",
       description: [
-        "Problem Statement: In India, the adoption of smart meters is extremely low, with only 0.05% of the 200 million energy meters being smart. This limits the ability to monitor and manage energy consumption effectively.",
-        "Approach: A cost-effective solution was developed by creating a device for under $6 using Arduino Uno and a GSM module. This device can be attached to existing energy meters, allowing them to read and transmit energy consumption data to a predefined network at regular intervals.",
+        "<span class='highlight'>Problem Statement</span>: In India, the adoption of smart meters is extremely low, with only 0.05% of the 200 million energy meters being smart. This limits the ability to monitor and manage energy consumption effectively.",
+        "<span class='highlight'>Approch</span>: A cost-effective solution was developed by creating a device for under $6 using Arduino Uno and a GSM module. This device can be attached to existing energy meters, allowing them to read and transmit energy consumption data to a predefined network at regular intervals.",
         "Impact: This project facilitates the transformation of traditional energy meters into smart meters at a minimal cost, improving energy consumption monitoring, enhancing user awareness through detailed analysis, and enabling the detection and management of abnormal energy usage patterns."
       ],
       categories: ["Embedded"]
@@ -144,10 +144,10 @@ const Projects = () => {
       associatedWith: "Aakarsh Consultancy Enterprises",
       skills: "Embedded C, FreeRTOS, Arduino, LoraWan",
       description: [
-        "Problem Statement:Need for a system to remotely monitor atmospheric and terrain conditions in mines.",
-        "Approach: Developed a system using Arduino Uno, Raspberry Pi, and the LoRa protocol.",
+        "<span class='highlight'>Problem Statement</span>: Need for a system to remotely monitor atmospheric and terrain conditions in mines.",
+        "<span class='highlight'>Approch</span>: Developed a system using Arduino Uno, Raspberry Pi, and the LoRa protocol.",
         "Employed ultrasonic, temperature, humidity, gas, and barometric pressure sensors for remote sensing and data analysis.",
-        "Impact: Enabled efficient remote monitoring of environmental conditions in mines.",
+        "<span class='highlight'>Impact</span>: Enabled efficient remote monitoring of environmental conditions in mines.",
         "Improved safety and data-driven decision-making in mining operations."
       ],
       categories: ["Embedded"]
@@ -158,10 +158,10 @@ const Projects = () => {
       associatedWith: "Personal Project",
       skills: "RTL Design, DAC, ADC, OpAmp, UART, FIFO, FPGA, Static Timing Analysis (STA), Clock Domain Crossing (CDC)",
       description: [
-        "Problem Statement: Need to develop and validate RTL blocks for FPGA to enhance performance and ensure reliability.",
-        "Approach: Developed RTL blocks (DAC, ADC, OpAmp, UART_RX, UART_TX, FIFO) and applied STA and CDC techniques.",
+        "<span class='highlight'>Problem Statement</span>: Need to develop and validate RTL blocks for FPGA to enhance performance and ensure reliability.",
+        "<span class='highlight'>Approch</span>: Developed RTL blocks (DAC, ADC, OpAmp, UART_RX, UART_TX, FIFO) and applied STA and CDC techniques.",
         "Conducted streamlined block-level verification focusing on timing, data integrity, and FIFO management.",
-        "Impact: Improved system performance assessments and FPGA prototype testing.",
+        "<span class='highlight'>Impact</span>: Improved system performance assessments and FPGA prototype testing.",
         "Enhanced reliability and efficiency in FPGA designs."],
       categories: ["Embedded"]
     }
