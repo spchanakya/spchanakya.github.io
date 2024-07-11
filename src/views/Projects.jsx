@@ -1,5 +1,4 @@
 
-
 import React, { useContext, useState } from "react";
 import Card from "../components/Card";
 import { ThemeContext } from "../themeProvider";
@@ -10,13 +9,19 @@ const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const projectData = [
-        {
+    {
       url: "",
       imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_chatbot.jpg",
-      title: "Generative AI-Enabled Web Application for SQL Databases",
+      title: "LLM-Enhanced Database Query Solution",
       associatedWith: "MeghaAI",
       skills: "Python, GenAI, PostgreSQL, RAG, Prompt Engineering",
-      description: "Developed an Chat-interface powered by ChatGPT3.5 turbo on top of SQL (PostgreSQL DB). Utilized RAG and Prompt engineering techniques to ehnace the relavance factor by 3x",
+      description: [
+        "<span class='highlight'>Problem Statement</span>: In many organizations, including the one that approached us, data is stored in PostgreSQL databases. Accessing this data requires knowledge of SQL queries, limiting the number of individuals who can retrieve information.",
+        "<span class='highlight'>Approch</span>: Developed a solution using GPT-3.5 Turbo to convert user questions into SQL queries, enabling non-technical users to access the database.",
+        "Utilized LangChain agents to streamline the process, incorporated authentication and chat history storage, and deployed the solution on Azure Web Apps, ensuring privacy and scalability using only the DB schema as context and Retrieval-Augmented Generation (RAG) concepts.",
+        "<span class='highlight'>Impact</span>: Democratizes database access by enabling users without SQL knowledge to query the database effortlessly, improving productivity and decision-making across the organization.",
+        "Ensures privacy and scalability through robust authentication, limited context provision, and the use of Azure Web Apps and RAG concepts, enhancing overall efficiency and security of data access."
+      ],
       categories: ["ML"]
     },
     {
@@ -24,29 +29,44 @@ const Projects = () => {
       imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_grafana.jpg",
       title: "KPI visualizations and monitoring using Grafana",
       associatedWith: "MeghaAI",
-      skills: "Grafana, JavaScript, Apache Echarts",
-      description: `Analyzed large MES Data in PostgreSQL, Provided Dashboards for critical KPI metrics in Grafana using Apache charts,
-      Plotly to enhance inventory management, and Initiated cloud data sourcing methods for real-time performance visualization.`,
+      skills: "KPI Analysis, Grafana, JavaScript, Apache Echarts, Data visualization",
+      description: [
+        "Problem Statement: Tracking KPIs like pre-order levels, production timelines, and demand forecasting is challenging due to disparate data sources and formats in the manufacturing industry.",
+        "Approach: Grafana and Apache ECharts: Implemented Grafana for standard KPI plots and Apache ECharts for advanced visualizations, enabling real-time monitoring and in-depth analysis.",
+        "Unified Dashboard: Designed a dashboard to consolidate data from multiple plants, allowing simultaneous monitoring and comparison of critical metrics like energy consumption and production efficiency.",
+        "Impact: Data Accessibility and Decision-Making: Delivered a single-window solution that integrates all manufacturing data, providing comprehensive visibility and improving decision-making through actionable insights and advanced analytics."
+      ],
       categories: ["ML"]
     },
     {
       url: "/",
       imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_RO.jpg",
-      title: "Predictive Maintainance of RO filters",
+      title: "Predictive Maintenance of RO filters",
       associatedWith: "MeghaAI",
-      skills: "Python, ML, Time series, CNN",
-      description: `Slashed Business operations costs by 50% in the Plant by Innovating an AI model using Regression, performed correlation 
-      analysis for feature engineering with sensor data for predictive maintenance of stakeholders’ $50 million RO unit filters.`,
+      skills: "Prophet, python, Sklearn, Pandas",
+      description: [
+        "Problem Statement: The client's RO system required monitoring of pressure drops across filters, with frequent cleaning causing significant downtime.",
+        "Current cleaning was done every 3-4 hours, often before reaching the pressure drop threshold, leading to inefficiency.",
+        "Approach: Developed a time series forecasting system using Prophet to predict when the pressure drop threshold would be reached.",
+        "Employed feature engineering techniques and evaluated various models, with Prophet providing the best results.",
+        "Impact: Increased the filter cleaning cycle to 24 hours, reducing downtime and operational interruptions.",
+        "Achieved a 50% reduction in filter cleaning costs, leading to significant cost savings."
+      ],
       categories: ["ML"]
     },
     {
       url: "",
       imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_cern.jpg",
-      title: "CNN and ML appraoch for Image Classification",
-      associatedWith: "Univeristy of Wisconsin Madison",
+      title: "CNN and ML approach for Image Classification",
+      associatedWith: "University of Wisconsin Madison",
       skills: "Python, Tensorflow, SkLearn, Matlab",
-      description: `Analyzed large MES Data in PostgreSQL, Provided Dashboards for critical KPI metrics in Grafana using Apache charts,
-      Plotly to enhance inventory management, and Initiated cloud data sourcing methods for real-time performance visualization.`,
+      description: [
+        "Problem Statement:Identifying new particles emitted during atomic collisions requires manual observation, which is impractical due to the rarity of these events.",
+        "Approach:Developed an automated method using AI models to classify particle images (16x16) into existing and new particles, logging parameters with MLflow. Performed PCA to identify that only 40% of the features significantly contributed to classification.",
+        "Evaluated Naive Bayes, KNN, Decision Tree, and Random Forest classifiers, achieving 89% accuracy, and implemented a 4-layer CNN with TensorFlow, achieving 95% accuracy through hyperparameter tuning.",
+        "Impact:Automated detection reduced the need for constant manual observation by scientists, enhancing efficiency.",
+        "Proposed model reduced expert intervention by 90%, significantly streamlining the identification process of new particles"
+      ],
       categories: ["ML"]
     },
     {
@@ -54,38 +74,54 @@ const Projects = () => {
       title: "Advanced Memory File System and Scheduling Enhancements for XV6 OS",
       associatedWith: "University of Wisconsin Madison",
       skills: "C++, Linux, OS",
-      description: `Engineered an advanced memory file system, custom shell, and an improved synchronous Interrupt Service Routine (ISR) for the XV6 OS, showcasing expertise in system-level C programming and operating system internals. 
-      Enhanced process scheduling and concurrency within XV6 by developing custom stack structures and implementing Multi-Level Feedback Queue (MLFQ) scheduling and mutexes.`,
+      description: [
+        "Problem Statement:The XV6 operating system required improvements in its file system, shell, and interrupt handling to enhance overall system performance.",
+        "There was a need to optimize process scheduling and concurrency for better system efficiency.",
+        "Approach:Engineered an advanced memory file system, developed a custom shell, and improved the synchronous Interrupt Service Routine (ISR) for the XV6 OS.",
+        "Enhanced process scheduling and concurrency by developing custom stack structures and implementing Multi-Level Feedback Queue (MLFQ) scheduling and mutexes.",
+        "Impact:Improved the performance and reliability of the XV6 operating system through advanced memory management and efficient interrupt handling.",
+        "Enhanced process scheduling and concurrency, leading to more efficient CPU utilization and better system responsiveness."],
       categories: ["Embedded"]
     },
-
     {
       url: "/",
       imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_capstone.jpg",
-      title: "Anhanced MobilenetV2 for fruit and vegetable quality classification",
+      title: "Enhanced MobileNetV2 for fruit and vegetable quality classification",
       associatedWith: "University of Wisconsin Madison",
-      skills: "Python, Computer vision, Neural network, Tensorflow, ",
-      description: "This is a short description of Project 2.",
+      skills: "Python, Computer vision, Neural network, Tensorflow",
+      description: [
+        "Problem Statement: Ensuring the quality of food products throughout the supply chain is crucial, but traditional methods of assessing ripeness and quality are often inefficient and prone to error.",
+        "Approach: Developed a deep learning-based solution using image analysis to determine the ripeness and quality of fruits and vegetables, leveraging pre-trained models (MobileNetV2, VGG16) and a custom 4-layer CNN.",
+        "Employed data augmentation techniques and fine-tuned the models to enhance accuracy, enabling the system to classify food items into various ripeness stages.",
+        "Impact: Optimized the quality control process in food processing and distribution centers, reducing waste and ensuring high-quality end products.",
+        "Empowered consumers, including visually impaired individuals, to assess the quality of food products accurately, enhancing decision-making and reducing food waste."
+      ],
       categories: ["ML"]
     },
-    {
-      url: "",
-      imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_grafana.jpg",
-      title: "Model parameter tuning using MLFlow",
-      associatedWith: "Akarsh Consultancy Enterprises",
-      skills: "Grafana, JavaScript, Apache Echarts",
-      description: `Analyzed large MES Data in PostgreSQL, Provided Dashboards for critical KPI metrics in Grafana using Apache charts,
-      Plotly to enhance inventory management, and Initiated cloud data sourcing methods for real-time performance visualization.`,
-      categories: ["ML"]
-    },
+    // {
+    //   url: "",
+    //   imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_grafana.jpg",
+    //   title: "Model parameter tuning using MLFlow",
+    //   associatedWith: "Akarsh Consultancy Enterprises",
+    //   skills: "Grafana, JavaScript, Apache Echarts",
+    //   description: [
+    //     "Analyzed large MES Data in PostgreSQL, provided dashboards for critical KPI metrics in Grafana using Apache charts and Plotly.", 
+    //     "Initiated cloud data sourcing methods for real-time performance visualization."],
+    //   categories: ["ML"]
+    // },
     {
       url: "",
       imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_cwt.jpg",
       title: "Water monitoring and control using IoT for CWT",
       associatedWith: "Aakarsh Consultancy Enterprises",
       skills: "Embedded C, FreeRTOS, Arduino, IoT, ThinkSpeak, Comm Protocols(SPI,I2C)",
-      description: `Analyzed large MES Data in PostgreSQL, Provided Dashboards for critical KPI metrics in Grafana using Apache charts,
-      Plotly to enhance inventory management, and Initiated cloud data sourcing methods for real-time performance visualization.`,
+      description: [
+        "Problem Statement: A manufacturing facility needed to ensure water reusability by maintaining specific pH, temperature, and turbidity standards, which required manual checks by multiple employees.",
+        "Approach: Developed an IIoT 4.0 solution with modules that continuously monitored pH, turbidity, and temperature, relaying data to a central processing unit using ESP8266.",
+        "Built an IoT dashboard with Thinkspeak for remote monitoring and employed FreeRTOS for efficient scheduling, multitasking, and advanced interrupt handling.",
+        "Impact: Automated the monitoring process, reducing the need for 10-12 employees and enabling remote management.",
+        "Improved operational efficiency and water quality management, ensuring optimal cooling tower performance."
+      ],
       categories: ["Embedded"]
     },
     {
@@ -93,9 +129,12 @@ const Projects = () => {
       imgSrc: "https://cdn.jsdelivr.net/gh/spchanakya/spchanakya.github.io@main/Assets/image_gsm.jpg",
       title: "Smart Energy Meter using GSM",
       associatedWith: "Aakarsh Consultancy Enterprises",
-      skills: "Embedded C, Arduino, IoT, ThinkSpeak, Comm Protocols(SPI,I2C)",
-      description: `Analyzed large MES Data in PostgreSQL, Provided Dashboards for critical KPI metrics in Grafana using Apache charts,
-      Plotly to enhance inventory management, and Initiated cloud data sourcing methods for real-time performance visualization.`,
+      skills: "Embedded C, Arduino, IoT, ThinkSpeak, GSM protocol, Data Analysis",
+      description: [
+        "Problem Statement: In India, the adoption of smart meters is extremely low, with only 0.05% of the 200 million energy meters being smart. This limits the ability to monitor and manage energy consumption effectively.",
+        "Approach: A cost-effective solution was developed by creating a device for under $6 using Arduino Uno and a GSM module. This device can be attached to existing energy meters, allowing them to read and transmit energy consumption data to a predefined network at regular intervals.",
+        "Impact: This project facilitates the transformation of traditional energy meters into smart meters at a minimal cost, improving energy consumption monitoring, enhancing user awareness through detailed analysis, and enabling the detection and management of abnormal energy usage patterns."
+      ],
       categories: ["Embedded"]
     },
     {
@@ -104,8 +143,13 @@ const Projects = () => {
       title: "Embedded Multi-Sensor Remote Mine Monitor",
       associatedWith: "Aakarsh Consultancy Enterprises",
       skills: "Embedded C, FreeRTOS, Arduino, LoraWan",
-      description: `Analyzed large MES Data in PostgreSQL, Provided Dashboards for critical KPI metrics in Grafana using Apache charts,
-      Plotly to enhance inventory management, and Initiated cloud data sourcing methods for real-time performance visualization.`,
+      description: [
+        "Problem Statement:Need for a system to remotely monitor atmospheric and terrain conditions in mines.",
+        "Approach: Developed a system using Arduino Uno, Raspberry Pi, and the LoRa protocol.",
+        "Employed ultrasonic, temperature, humidity, gas, and barometric pressure sensors for remote sensing and data analysis.",
+        "Impact: Enabled efficient remote monitoring of environmental conditions in mines.",
+        "Improved safety and data-driven decision-making in mining operations."
+      ],
       categories: ["Embedded"]
     },
     {
@@ -113,8 +157,12 @@ const Projects = () => {
       title: "Maze Runner - RTL Design",
       associatedWith: "Personal Project",
       skills: "RTL Design, DAC, ADC, OpAmp, UART, FIFO, FPGA, Static Timing Analysis (STA), Clock Domain Crossing (CDC)",
-      description: `Developed and validated RTL blocks (DAC, ADC, OpAmp, UART_RX, UART_TX, FIFO) for FPGA, applying Static Timing Analysis (STA) and Clock Domain Crossing (CDC) techniques to optimize performance and ensure reliability.
-      Enhanced system performance assessments and FPGA prototype testing through streamlined block-level verification, focusing on timing, data integrity, and FIFO management in asynchronous interfaces.`,
+      description: [
+        "Problem Statement: Need to develop and validate RTL blocks for FPGA to enhance performance and ensure reliability.",
+        "Approach: Developed RTL blocks (DAC, ADC, OpAmp, UART_RX, UART_TX, FIFO) and applied STA and CDC techniques.",
+        "Conducted streamlined block-level verification focusing on timing, data integrity, and FIFO management.",
+        "Impact: Improved system performance assessments and FPGA prototype testing.",
+        "Enhanced reliability and efficiency in FPGA designs."],
       categories: ["Embedded"]
     }
   ];

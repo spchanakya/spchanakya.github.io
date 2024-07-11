@@ -61,9 +61,17 @@ const Card = ({ imgSrc, title, associatedWith, skills, description }) => {
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               {title}
             </h5>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              {description}
-            </p>
+            {Array.isArray(description) ? (
+              <ul className="list-disc list-inside mb-3 text-gray-700 dark:text-gray-400">
+                {description.map((point, index) => (
+                  <li key={index} className="text-justify" dangerouslySetInnerHTML={{ __html: point }}></li>
+                ))}
+              </ul>
+            ) : (
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">
+                {description}
+              </p>
+            )}
           </div>
         </div>
       )}

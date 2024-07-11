@@ -12,6 +12,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.text-justify {
+  text-align: justify;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
 
 .switch {
   width: 160px;

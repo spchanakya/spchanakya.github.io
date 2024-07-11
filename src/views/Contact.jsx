@@ -29,7 +29,7 @@ const Contact = () => {
           </p>
         </div>
         <div className="flex justify-between items-center md:items-stretch  flex-col md:flex-row pb-24">
-          <div className="w-full md:pr-8">
+          {/* <div className="w-full md:pr-8">
             <form>
               <div class="my-6">
                 <label
@@ -98,7 +98,7 @@ const Contact = () => {
                 </button>
               </div>
             </form>
-          </div>
+          </div> */}
           <div className="w-full flex flex-col md:items-end  mt-12 md:mt-6">
             <h1 className="text-3xl font-bold">Phone</h1>
             <a
