@@ -14,7 +14,7 @@ const Home = () => {
   const darkMode = theme.state.darkMode;
   
   // Replace this URL with the actual iCloud share link of your resume
-  const resumeUrl = "https://www.icloud.com/iclouddrive/077vWCRG828FQu8sXKzISNg-Q#PranavaChanakya%5FResume";
+  const resumeUrl = "https://drive.google.com/file/d/1A23xCKnYgsSpBwjQx60LO4Mc-Aivbo9v/view?usp=drive_link";
 
   return (
     <>
@@ -43,9 +43,9 @@ const Home = () => {
                     1000,
                     "Data Scientist",
                     1000,
-                    "Embedded Software Developer",
+                    "AI Developer",
                     1000,
-                    "Hardware Engineer",
+                    "Agentic AI Developer",
                     1000,
                   ]}
                   loop={Infinity}
@@ -59,7 +59,7 @@ const Home = () => {
                   : "mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
               }
             >
-              I am a Machine Learning Engineer and Electronics Enthusiast.<br></br>Currently working as an ML Engineer at MeghaAI
+              I am a AWS Certified Machine Learning Engineer.<br></br> I Love building intelligent systems that solve real-world problems through data-driven insights and cutting-edge AI technologies.
             </p>
             <div className="flex md:justify-start ">
               {contactLinks.map((el) => (
