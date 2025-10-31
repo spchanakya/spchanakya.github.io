@@ -7,6 +7,7 @@ import Services from "./views/Services";
 import Timeline from './views/Career';
 import Publications from "./views/Publications";
 import Projects from "./views/Projects";
+import Chatbot from "./components/Chatbot";
 
 import LoadingScreen from "./components/LoadingScreen";
 import { ThemeProvider } from "./themeProvider";
@@ -31,6 +32,7 @@ function App() {
             <Projects />
             <Publications />
             <Contact />
+            <Chatbot />
           </div>
 
         ) : (

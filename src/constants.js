@@ -37,6 +37,39 @@ export const contactLinks = [
 { name: 'LinkedIn', url: 'https://img.icons8.com/doodle/40/000000/linkedin--v2.png', link: 'https://www.linkedin.com/in/pranava-chanakya/'}
 ]
 
+// =================
+// API Configuration 
+// =================
+// 🚀 CHANGE CHATBOT ENDPOINT URL HERE! 🚀
+
+// Environment-specific URLs
+const CHATBOT_URLS = {
+  LOCAL: 'https://noncombinative-marinda-freckly.ngrok-free.dev'
+};
+
+export const API_CONFIG = {
+  // 🔧 Change this line to switch environments:
+  // Use CHATBOT_URLS.LOCAL, CHATBOT_URLS.PRODUCTION, or CHATBOT_URLS.STAGING
+  CHATBOT_BASE_URL: CHATBOT_URLS.LOCAL,
+  
+  CHATBOT_ENDPOINTS: {
+    CHAT: '/chat',
+    HEALTH: '/health',
+    SYSTEM_PROMPT: '/system-prompt'
+  },
+  
+  // Full URLs (automatically constructed - don't change these)
+  get CHATBOT_CHAT_URL() {
+    return `${this.CHATBOT_BASE_URL}${this.CHATBOT_ENDPOINTS.CHAT}`;
+  },
+  get CHATBOT_HEALTH_URL() {
+    return `${this.CHATBOT_BASE_URL}${this.CHATBOT_ENDPOINTS.HEALTH}`;
+  },
+  get CHATBOT_SYSTEM_PROMPT_URL() {
+    return `${this.CHATBOT_BASE_URL}${this.CHATBOT_ENDPOINTS.SYSTEM_PROMPT}`;
+  }
+}
+
 
 
 export const serviceData = [
