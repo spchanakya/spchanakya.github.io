@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import cloud from "../assets/cloudBg.png";
 import cloudDark from "../assets/cloudDark.png";
 
-const Home = () => {
+const Home = ({ chatbotRef }) => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   
@@ -73,16 +73,24 @@ const Home = () => {
                 </a>
               ))}
             </div>
-            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-              <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
+            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start sm:space-x-4">
+              <div className="cursor-pointer w-full sm:w-auto">
                 <a
                   href={resumeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 md:py-4 md:text-lg md:px-10 transition-colors duration-200"
                 >
                   Resume
                 </a>
+              </div>
+              <div className="mt-3 sm:mt-0 cursor-pointer w-full sm:w-auto">
+                <button
+                  onClick={() => chatbotRef?.current?.openChatbot()}
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 md:py-4 md:text-lg md:px-10 transition-colors duration-200"
+                >
+                  Chat with My AI! 🚀
+                </button>
               </div>
             </div>
           </div>

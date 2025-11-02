@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Contact from "./views/Contact";
 import Navbar from "./components/Navbar";
 import About from "./views/About";
@@ -14,6 +14,8 @@ import { ThemeProvider } from "./themeProvider";
 
 function App() {
   const [loading, setLoading] = useState(true)
+  const chatbotRef = useRef(null);
+  
   useEffect(() => {
     setTimeout(() => setLoading(false), 1000)
   }, [])
@@ -25,14 +27,14 @@ function App() {
         {!loading ? (
           <div >
             <Navbar />
-            <Home />
+            <Home chatbotRef={chatbotRef} />
             <About />
             <Services />
             <Timeline />
             <Projects />
             <Publications />
             <Contact />
-            <Chatbot />
+            <Chatbot ref={chatbotRef} />
           </div>
 
         ) : (

@@ -1,9 +1,9 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, forwardRef, useImperativeHandle } from 'react';
 import { FaComments, FaTimes, FaPaperPlane } from 'react-icons/fa';
 import { API_CONFIG } from '../constants';
 import './Chatbot.css';
 
-const Chatbot = () => {
+const Chatbot = forwardRef((props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
     {
@@ -28,6 +28,13 @@ const Chatbot = () => {
   const toggleChatbot = () => {
     setIsOpen(!isOpen);
   };
+
+  // Expose methods to parent component through ref
+  useImperativeHandle(ref, () => ({
+    openChatbot: () => setIsOpen(true),
+    closeChatbot: () => setIsOpen(false),
+    toggleChatbot: () => setIsOpen(prev => !prev)
+  }));
 
   const sendMessage = async () => {
     if (!inputMessage.trim()) return;
@@ -184,6 +191,6 @@ const Chatbot = () => {
       )}
     </div>
   );
-};
+});
 
 export default Chatbot;

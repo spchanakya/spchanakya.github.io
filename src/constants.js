@@ -75,25 +75,17 @@ export const API_CONFIG = {
 export const serviceData = [
   {
     name: 'Machine Learning and MLOps',
-    desc: `I build and deploy innovative algorithms leveraging AI and ML, focusing on LLM-enabled GenAI Apps. I stay current with AI innovations and showcase my work on my portfolio website. Using industry-standard MLOps tools, I ensure detailed tracking, logging, and monitoring of model performance, providing optimized solutions and KPI metrics to prevent model drift.`,
+    desc: `I design models using classic ML and neural networks, handle tuning and evaluation, and deploy models in production. I set up tracking, logging, and automated checks to monitor performance, detect drift, and maintain reliability across full life cycle workflows.`,
     img: "https://img.icons8.com/?size=100&id=fTkqveCX0blI&format=png&color=000000"
   },
   {
-    name: 'Data Science',
-    desc: `Expertised in building data-driven insights by building end-to-end pipelines that encompass 
-    business understanding, ETL processes, data wrangling, cleaning, feature engineering, 
-    and exploratory data analysis (EDA). Built business visualization Dashboards of key performance 
-    indicators (KPIs) to facilitate informed business decisions.`,
+    name: 'Data Science and Analytics',
+    desc: `I analyze business needs, explore data, and prepare clean structured datasets. I build feature sets, run EDA, develop metrics, and create dashboards that help leadership make decisions. My work includes ETL, data wrangling, and building clear KPI views for execution teams.`,
     img: "https://img.icons8.com/?size=100&id=izgFdRB2AEqe&format=png&color=000000"
   },
-
   {
-    name: 'Embedded (Electronics)',
-    desc: `Employing industry tools for MLOps, providing detailed tracking and logging of 
-    artifacts and evaluation metrics. Building data-driven pipelines to deploy and monitor model 
-    performance. Additionally, offering KPI metrics and optimized solutions to prevent model drift.`,
-    img: "https://img.icons8.com/?size=100&id=oaoTa6nA7qv3&format=png&color=00fff0"
-  },
-
-
+    name: 'GenAI and Agentic AI',
+    desc: `I build LLM powered systems and lightweight agents to assist workflows. This includes building prompt and memory flows, evaluation pipelines, tool calling setups, and working with frameworks like LangChain, LangGraph, and automation tools like n8n and Bedrock.`,
+    img: "https://img.icons8.com/?size=100&id=POBc2SrrhhnF&format=png&color=000000"
+  }
 ]
